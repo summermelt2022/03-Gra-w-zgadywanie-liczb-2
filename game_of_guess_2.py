@@ -1,8 +1,18 @@
 def computer_guess(min_c, max_c):
+    """
+Calculating next guess using previous answers
+    :param min_c: previous answers used as min
+    :param max_c: previous answers used as max
+    :return: guess
+    """
     return int((max_c - min_c) // 2) + min_c
 
 
 def guess_game_two():
+    """
+Game of guessing.
+    :return: Outcome of game result.
+    """
     print("Think about number and i will guess it in ten moves.")
     min_answer = 0
     max_answer = 1000
